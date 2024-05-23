@@ -1,0 +1,140 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: "News Gothic", sans-serif;
+    font-size: 20px;
+}
+
+header img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border: none;
+    border-radius: 0px 0px 10px 10px ;
+
+}
+
+nav {
+    /* 4. Style your navigation 
+    - use at least three CSS properties. */
+    box-sizing: border-box;
+    padding: 15px 0px;
+    background-color: #7a7a7a98;
+    Position: relative;
+    bottom: 55px;
+    border-radius: 0px 0px 10px 10px ;
+
+}
+
+h1, h2 {
+    text-align: Center;
+    margin-bottom: 20px;
+
+}
+
+h1 {
+    font-size: 60px;
+    background-color: rgb(32, 32, 32);
+}
+
+h2 {
+    font-size: 32px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.rebels {
+    background-color: #233d61;
+}
+
+.empire {
+    background-color: #556567;
+}
+
+.navflex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+p {
+    padding: 10px;
+}
+
+.grid-image {
+    /* 6. Apply the grid property to at least one parent element. 
+    - Use at least two columns */
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    gap: 10px 10px;
+    align-items: center;
+    
+}
+.grid-image img{
+    Width:80%;
+}
+
+.grid-image img:nth-child(odd){
+    /* 9. Implement the nth-child selector */
+    border:blue solid 10px;
+}
+
+
+.flex-image{
+    /* 7. Apply the flex property to at least one parent element  */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flex-image img{
+    width: 30%;
+}
+
+
+
+img {   
+    /* 5. Style all images using the box model. 
+  - At a minimum use border
+  - padding
+  - border-radius. */
+    border: white solid 2px;
+    padding: 5px;
+    border-radius: 5px;
+
+    transition: .5s border linear, .5s border-radius ease, .5s transform ease;
+    transition-delay: 1s, 1s, 1s;
+    
+}
+
+.grid-image img:hover ,main img:hover { 
+    /*8. Update at least one element using the hover pseudo-class   */
+    border: rgb(167, 60, 60) solid 20px;
+    padding: 5px;
+    border-radius: 15px;   
+    transform: scale(150%,150%);
+    
+}
+
+.skiptomain {
+    position: absolute; 
+    left: -1000px; 
+    
+}
+.skiptomain:focus {
+    padding: 5px;
+    position: static; 
+    /*3. Skip to Main Content" link
+    -Use the position property 
+    -focus pseudo-class
+    -It should only be visible when the link is in focus. */
+    
+}
